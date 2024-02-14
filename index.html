@@ -17,10 +17,8 @@
     <script>
         console.log(itedPersonal)
         let count = 1;
-        itedPersonal.forEach(element => {
-            document.getElementById("container").innerHTML += count + ". " + element[0] + " / " + element[1] + " / " + element[2] + " / " + element[3] + " / " + element[4] + " / " + element[5] + " / " + element[6] + " / " + element[7] + " / " + element[8] + " / " + element[9] + "<br>"
-
-            count++
+        itedPersonal.forEach((element, index) => {
+            document.getElementById("container").innerHTML += index + 1 + ". " + element[0] + " / " + element[1] + " / " + element[2] + " / " + element[3] + " / " + element[4] + " / " + element[5] + " / " + element[6] + " / " + element[7] + " / " + element[8] + " / " + element[9] + "<br>"
         });
     </script>
 
